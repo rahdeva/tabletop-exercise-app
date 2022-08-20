@@ -16,7 +16,9 @@ class AppColors{
   Color greenColor4 = const Color.fromARGB(64, 144, 208, 194);
   Color greenColor5 = const Color(0xFFC7D090);
   Color greenColor6 = const Color(0xFF74B9A8);
+  Color greenColor7 = const Color(0xFF395B64);
   Color blueColor = const Color(0xFF90C1D0);
+  Color blueColor2 = const Color(0xFF2C5068);
   Color purpleColor = const Color(0xFFCB90D0);
   Color orangeColor = const Color(0xFFD0A390);
   Color slate300 = const Color(0xFFCBD5E1);
@@ -72,6 +74,7 @@ class Images {
   String lecturer3 = 'assets/images/lecturer-3.jpg';
   String lecturer4 = 'assets/images/lecturer-4.jpg';
   String igIcon = 'assets/icons/ig-icon.png';
+  String igIcon2 = 'assets/icons/ig-icon-2.png';
   String poltekbangIcon = 'assets/icons/poltekbang-icon.png';
   String ppkpIcon = 'assets/icons/ppkp-icon.png';
   String waIcon = 'assets/icons/wa-icon.png';
@@ -80,7 +83,7 @@ class Images {
 
 BoxShadow dropShadow() {
   return BoxShadow(
-    color: Resources.color.whiteColor.withOpacity(0.1),
+    color: Resources.color.blackColor.withOpacity(0.1),
     spreadRadius: 0,
     blurRadius: 20,
     offset: const Offset(0, 5), // changes position of shadow

@@ -138,7 +138,7 @@ class ContentLogin extends GetView<LoginController> {
                         child: Obx(
                           () => ElevatedButton(
                             onPressed: () {
-                              Get.toNamed(Routes.HOME);
+                              Get.offAllNamed(Routes.HOME);
                               // if (controller.isLoading.isFalse) {
                               //   controller.loginEmail();
                               // }
