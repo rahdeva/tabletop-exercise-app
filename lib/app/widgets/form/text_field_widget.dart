@@ -34,6 +34,9 @@ class TextFieldWidget extends StatelessWidget {
           hintStyle: style,
           hintText: text,
           isDense: true,
+          filled: true,
+          hoverColor: Resources.color.whiteColor,
+          fillColor: Resources.color.whiteColor,
           contentPadding: const EdgeInsets.all(20),
           border:  OutlineInputBorder(
             borderSide: BorderSide(

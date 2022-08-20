@@ -63,7 +63,7 @@ class ContentLogin extends GetView<LoginController> {
                 borderRadius: BorderRadius.circular(50)
               ),
               width: Get.width/2 - 100,
-              height: Get.width/2 - 60,
+              height: Get.height,
               padding: const EdgeInsets.all(40),
               child: Image.asset(
                 Resources.images.carImages,

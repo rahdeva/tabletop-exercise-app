@@ -34,6 +34,9 @@ class PasswordTextFieldWidget extends StatelessWidget {
             hintText: text,
             hintStyle: style,
             isDense: true,
+            filled: true,
+            hoverColor: Resources.color.whiteColor,
+            fillColor: Resources.color.whiteColor,
             suffixIcon: IconButton(
               onPressed: () => isHiddenController.toggle(),
               icon: Icon(
