@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 
 class Resources {
   static AppColors color = AppColors();
-  static AppImages images = AppImages();
+  static AppImages appImages = AppImages();
+  static Images images = Images();
 }
 
 class AppColors{
   Color backgroundColor = const Color(0xFFE7F6F2);
   Color whiteColor = const Color(0xFFFAFAFA);
+  Color blackColor = const Color(0xFF000000);
   Color greenColor1 = const Color(0xFFA5C9CA);
   Color greenColor2 = const Color(0xFF508B7D);
   Color greenColor3 = const Color(0xFF90D0C2);
@@ -58,6 +60,21 @@ class AppImages {
   AssetImage waIcon = const AssetImage(
     'assets/images/wa-icon.png'
   );
+}
+
+class Images {
+  String bgImages = 'assets/images/bg-images.png';
+  String carImages = 'assets/images/car.png';
+  String damkarImages = 'assets/images/damkar.png';
+  String fireImages = 'assets/images/fire.png';
+  String lecturer1 = 'assets/images/lecturer-1.jpg';
+  String lecturer2 = 'assets/images/lecturer-2.jpg';
+  String lecturer3 = 'assets/images/lecturer-3.jpg';
+  String lecturer4 = 'assets/images/lecturer-4.jpg';
+  String igIcon = 'assets/icons/ig-icon.png';
+  String poltekbangIcon = 'assets/icons/poltekbang-icon.png';
+  String ppkpIcon = 'assets/icons/ppkp-icon.png';
+  String waIcon = 'assets/icons/wa-icon.png';
 }
 
 

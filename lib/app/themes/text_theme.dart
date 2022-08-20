@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-var projectTextTheme = TextTheme(
+var myTextTheme = TextTheme(
   headline1: GoogleFonts.almarai(
     fontSize: 96,
     fontWeight: FontWeight.w300,
@@ -17,7 +17,7 @@ var projectTextTheme = TextTheme(
     fontWeight: FontWeight.w400
   ),
   headline4: GoogleFonts.almarai(
-    fontSize: 34,
+    fontSize: 36,
     fontWeight: FontWeight.w400,
     letterSpacing: 0.25
   ),
