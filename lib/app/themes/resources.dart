@@ -18,6 +18,7 @@ class AppColors{
   Color greenColor6 = const Color(0xFF74B9A8);
   Color greenColor7 = const Color(0xFF395B64);
   Color greenColor8 = const Color.fromARGB(151, 144, 208, 194);
+  Color greenColor9 = const Color.fromARGB(127, 144, 208, 194);
   Color blueColor = const Color(0xFF90C1D0);
   Color blueColor2 = const Color(0xFF2C5068);
   Color purpleColor = const Color(0xFFCB90D0);
