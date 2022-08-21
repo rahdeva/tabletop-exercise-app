@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
+import 'package:tabletop_exercise_app/app/routes/app_pages.dart';
 import 'package:tabletop_exercise_app/app/themes/resources.dart';
 import 'package:tabletop_exercise_app/app/themes/text_theme.dart';
 
@@ -44,14 +45,15 @@ class HomeView extends GetView<HomeController> {
                         child: Text(
                           "Home",
                           style: myTextTheme.headline6!.copyWith(
-                            color: Resources.color.blackColor,
+                            color: Resources.color.whiteColor,
+                            fontWeight: FontWeight.bold,
                             decoration: TextDecoration.underline
                           ),
                         ),
                       ),
                       const SizedBox(width: 48),
                       InkWell(
-                        onTap: (){},
+                        onTap: () => Get.toNamed(Routes.ABOUT),
                         child: Text(
                           "About",
                           style: myTextTheme.headline6!.copyWith(
@@ -61,7 +63,7 @@ class HomeView extends GetView<HomeController> {
                       ),
                       const SizedBox(width: 48),
                       InkWell(
-                        onTap: (){},
+                        onTap: () => Get.toNamed(Routes.LECTURER),
                         child: Text(
                           "Lecturer",
                           style: myTextTheme.headline6!.copyWith(
@@ -71,7 +73,7 @@ class HomeView extends GetView<HomeController> {
                       ),
                       const SizedBox(width: 48),
                       InkWell(
-                        onTap: (){},
+                        onTap: () => Get.toNamed(Routes.CONTACT),
                         child: Text(
                           "Contact Us",
                           style: myTextTheme.headline6!.copyWith(
@@ -81,7 +83,7 @@ class HomeView extends GetView<HomeController> {
                       ),
                       const SizedBox(width: 48),
                       InkWell(
-                        onTap: (){},
+                        onTap: () => Get.toNamed(Routes.LOGIN),
                         child: Container(
                           decoration: BoxDecoration(
                             color: Resources.color.backgroundColor,
