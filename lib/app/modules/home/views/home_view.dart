@@ -83,7 +83,7 @@ class HomeView extends GetView<HomeController> {
                       ),
                       const SizedBox(width: 48),
                       InkWell(
-                        onTap: () => Get.toNamed(Routes.LOGIN),
+                        onTap: () => Get.offAllNamed(Routes.LOGIN),
                         child: Container(
                           decoration: BoxDecoration(
                             color: Resources.color.backgroundColor,
