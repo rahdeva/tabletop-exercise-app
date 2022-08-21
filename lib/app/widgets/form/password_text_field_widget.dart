@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tabletop_exercise_app/app/themes/color_theme.dart';
+import 'package:tabletop_exercise_app/app/themes/resources.dart';
 import 'package:tabletop_exercise_app/app/themes/decoration.dart';
 
 class PasswordTextFieldWidget extends StatelessWidget {

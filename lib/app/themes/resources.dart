@@ -17,6 +17,7 @@ class AppColors{
   Color greenColor5 = const Color(0xFFC7D090);
   Color greenColor6 = const Color(0xFF74B9A8);
   Color greenColor7 = const Color(0xFF395B64);
+  Color greenColor8 = const Color.fromARGB(151, 144, 208, 194);
   Color blueColor = const Color(0xFF90C1D0);
   Color blueColor2 = const Color(0xFF2C5068);
   Color purpleColor = const Color(0xFFCB90D0);
@@ -78,6 +79,11 @@ class Images {
   String poltekbangIcon = 'assets/icons/poltekbang-icon.png';
   String ppkpIcon = 'assets/icons/ppkp-icon.png';
   String waIcon = 'assets/icons/wa-icon.png';
+  String reference = 'assets/icons/reference.png';
+  String reporting = 'assets/icons/reporting.png';
+  String vehicle = 'assets/icons/vehicle.png';
+  String realTabletop = 'assets/icons/real-tabletop.png';
+  String exercise = 'assets/icons/exercise.png';
 }
 
 

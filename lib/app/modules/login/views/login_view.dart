@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:tabletop_exercise_app/app/routes/app_pages.dart';
-import 'package:tabletop_exercise_app/app/themes/color_theme.dart';
+import 'package:tabletop_exercise_app/app/themes/resources.dart';
 import 'package:tabletop_exercise_app/app/themes/text_theme.dart';
 import 'package:tabletop_exercise_app/app/widgets/form/password_text_field_widget.dart';
 import 'package:tabletop_exercise_app/app/widgets/form/text_field_widget.dart';

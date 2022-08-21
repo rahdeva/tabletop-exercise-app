@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tabletop_exercise_app/app/themes/color_theme.dart';
+import 'package:tabletop_exercise_app/app/themes/resources.dart';
 
 BoxDecoration textfieldDecoration() {
   return BoxDecoration(

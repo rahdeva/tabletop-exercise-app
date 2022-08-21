@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
-import 'package:tabletop_exercise_app/app/themes/color_theme.dart';
+import 'package:tabletop_exercise_app/app/themes/resources.dart';
 import 'package:tabletop_exercise_app/app/themes/text_theme.dart';
 
 import '../controllers/home_controller.dart';
@@ -20,7 +20,7 @@ class HomeView extends GetView<HomeController> {
             Container(
               color: Resources.color.greenColor1,
               height: 100,
-              padding: const EdgeInsets.symmetric(horizontal: 24),
+              padding: const EdgeInsets.symmetric(horizontal: 64),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -98,7 +98,6 @@ class HomeView extends GetView<HomeController> {
                           ),
                         ),
                       ),
-                      const SizedBox(width: 24),
                     ],
                   )
                 ],
@@ -117,13 +116,14 @@ class HomeView extends GetView<HomeController> {
                         child: Image.asset(
                           Resources.images.fireImages,
                           width: 700,
+                          color: Resources.color.greenColor8,
                         ),
                       ),
                       Positioned(
                         right: 240,
                         bottom: 0,
                         child: CircleAvatar(
-                          backgroundColor: Resources.color.greenColor1,
+                          backgroundColor: Resources.color.greenColor4,
                           radius: 50,
                         ),
                       ),
@@ -168,12 +168,12 @@ class HomeView extends GetView<HomeController> {
                                   top: 0,
                                   right: 0,
                                   child: CircleAvatar(
-                                    backgroundColor: Resources.color.greenColor2,
+                                    backgroundColor: Resources.color.greenColor3,
                                     radius: 100,
                                   ),
                                 ),
                                 CircleAvatar(
-                                  backgroundColor: Resources.color.greenColor1,
+                                  backgroundColor: Resources.color.greenColor2,
                                   radius: 200,
                                 ),
                                 Image.asset(
@@ -184,7 +184,7 @@ class HomeView extends GetView<HomeController> {
                                   bottom: 32,
                                   left: 32,
                                   child: CircleAvatar(
-                                    backgroundColor: Resources.color.greenColor2,
+                                    backgroundColor: Resources.color.greenColor3,
                                     radius: 30,
                                   ),
                                 ),
@@ -203,7 +203,7 @@ class HomeView extends GetView<HomeController> {
                               Resources.images.igIcon2,
                               width: 50,
                             ),
-                            const SizedBox(width: 48),
+                            const SizedBox(width: 24),
                             Text(
                               "@ppkp.poltekbangplg",
                               style: myTextTheme.headline4,
@@ -216,9 +216,80 @@ class HomeView extends GetView<HomeController> {
                   ),
                   const SizedBox(height: 24),
                   SizedBox(
-                    height: 1000,
                     child: Stack(
                       children: [
+                        Positioned(
+                          right: 400,
+                          top: 150,
+                          child: CircleAvatar(
+                            backgroundColor: Resources.color.greenColor3,
+                            radius: 30,
+                          ),
+                        ),
+                        Positioned(
+                          top: 400,
+                          left: 200,
+                          child: CircleAvatar(
+                            backgroundColor: Resources.color.greenColor4,
+                            radius: 40,
+                          ),
+                        ),
+                        Positioned(
+                          top: 350,
+                          left: 350,
+                          child: CircleAvatar(
+                            backgroundColor: Resources.color.greenColor1,
+                            radius: 25,
+                          ),
+                        ),
+                        Positioned(
+                          top: 420,
+                          right: 63,
+                          child: CircleAvatar(
+                            backgroundColor: Resources.color.greenColor4,
+                            radius: 50,
+                          ),
+                        ),
+                        Positioned(
+                          top: 600,
+                          right: 450,
+                          child: CircleAvatar(
+                            backgroundColor: Resources.color.greenColor1,
+                            radius: 25,
+                          ),
+                        ),
+                        Positioned(
+                          top: 700,
+                          left: 200,
+                          child: CircleAvatar(
+                            backgroundColor: Resources.color.greenColor1,
+                            radius: 40,
+                          ),
+                        ),
+                        Positioned(
+                          top: 800,
+                          left: 400,
+                          child: CircleAvatar(
+                            backgroundColor: Resources.color.greenColor4,
+                            radius: 25,
+                          ),
+                        ),
+                        Positioned(
+                          top: 900,
+                          right: 200,
+                          child: CircleAvatar(
+                            backgroundColor: Resources.color.greenColor3,
+                            radius: 25,
+                          ),
+                        ),
+                        Positioned(
+                          top: 1000,
+                          right: 500,
+                          child: CircleAvatar(
+                            backgroundColor: Resources.color.greenColor4,
+                            radius: 40,
+                          ),
+                        ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -250,7 +321,7 @@ class HomeView extends GetView<HomeController> {
                               ),
                             ),
                             Container(
-                              height: 100,
+                              height: 120,
                               width: Get.width/2-64,
                               margin: const EdgeInsets.only(left: 64),
                               alignment: Alignment.bottomLeft,
@@ -262,22 +333,214 @@ class HomeView extends GetView<HomeController> {
                                 ),
                                 boxShadow: [dropShadow()]
                               ),
-                              child: Row(
-                                children: [
-                                  Container(
-                                    decoration: BoxDecoration(
-                                      color: Resources.color.greenColor3,
-                                      borderRadius: const BorderRadius.only(
-                                        topRight: Radius.circular(200),
-                                        bottomRight: Radius.circular(200),
+                              child: InkWell(
+                                borderRadius: const BorderRadius.only(
+                                  topRight: Radius.circular(200),
+                                  bottomRight: Radius.circular(200),
+                                ),
+                                onTap: (){},
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      padding: const EdgeInsets.all(8),
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(20),
+                                        child: Image.asset(
+                                          Resources.images.reference
+                                        ),
                                       ),
-                                      boxShadow: [dropShadow()]
                                     ),
-                                    width: 50,
-                                  )
-                                ],
+                                    const SizedBox(width: 32),
+                                    Text(
+                                      "References",
+                                      style: myTextTheme.headline5!.copyWith(
+                                        fontSize: 28,
+                                        fontWeight: FontWeight.bold
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ),
-                            )
+                            ),
+                            const SizedBox(height: 60),
+                            Align(
+                              alignment: Alignment.centerRight,
+                              child: Container(
+                                height: 120,
+                                width: Get.width/2-64,
+                                margin: const EdgeInsets.only(right: 64),
+                                decoration: BoxDecoration(
+                                  color: Resources.color.whiteColor,
+                                  borderRadius: const BorderRadius.only(
+                                    topLeft: Radius.circular(200),
+                                    bottomLeft: Radius.circular(200),
+                                  ),
+                                  boxShadow: [dropShadow()]
+                                ),
+                                child: InkWell(
+                                  borderRadius: const BorderRadius.only(
+                                    topLeft: Radius.circular(200),
+                                    bottomLeft: Radius.circular(200),
+                                  ),
+                                  onTap: (){},
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.end,
+                                    children: [
+                                      Text(
+                                        "ARFF Vehicle",
+                                        style: myTextTheme.headline5!.copyWith(
+                                          fontSize: 28,
+                                          fontWeight: FontWeight.bold
+                                        ),
+                                      ),
+                                      const SizedBox(width: 32),
+                                      Container(
+                                        padding: const EdgeInsets.all(8),
+                                        child: ClipRRect(
+                                          borderRadius: BorderRadius.circular(20),
+                                          child: Image.asset(
+                                            Resources.images.vehicle
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 60),
+                            Container(
+                              height: 120,
+                              width: Get.width/2-64,
+                              margin: const EdgeInsets.only(left: 64),
+                              alignment: Alignment.bottomLeft,
+                              decoration: BoxDecoration(
+                                color: Resources.color.whiteColor,
+                                borderRadius: const BorderRadius.only(
+                                  topRight: Radius.circular(200),
+                                  bottomRight: Radius.circular(200),
+                                ),
+                                boxShadow: [dropShadow()]
+                              ),
+                              child: InkWell(
+                                borderRadius: const BorderRadius.only(
+                                  topRight: Radius.circular(200),
+                                  bottomRight: Radius.circular(200),
+                                ),
+                                onTap: (){},
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      padding: const EdgeInsets.all(8),
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(20),
+                                        child: Image.asset(
+                                          Resources.images.reporting
+                                        ),
+                                      ),
+                                    ),
+                                    const SizedBox(width: 32),
+                                    Text(
+                                      "Reporting System",
+                                      style: myTextTheme.headline5!.copyWith(
+                                        fontSize: 28,
+                                        fontWeight: FontWeight.bold
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 60),
+                            Align(
+                              alignment: Alignment.centerRight,
+                              child: Container(
+                                height: 120,
+                                width: Get.width/2-64,
+                                margin: const EdgeInsets.only(right: 64),
+                                decoration: BoxDecoration(
+                                  color: Resources.color.whiteColor,
+                                  borderRadius: const BorderRadius.only(
+                                    topLeft: Radius.circular(200),
+                                    bottomLeft: Radius.circular(200),
+                                  ),
+                                  boxShadow: [dropShadow()]
+                                ),
+                                child: InkWell(
+                                  borderRadius: const BorderRadius.only(
+                                    topLeft: Radius.circular(200),
+                                    bottomLeft: Radius.circular(200),
+                                  ),
+                                  onTap: (){},
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.end,
+                                    children: [
+                                      Text(
+                                        "Real Tabletop",
+                                        style: myTextTheme.headline5!.copyWith(
+                                          fontSize: 28,
+                                          fontWeight: FontWeight.bold
+                                        ),
+                                      ),
+                                      const SizedBox(width: 32),
+                                      Container(
+                                        padding: const EdgeInsets.all(8),
+                                        child: ClipRRect(
+                                          borderRadius: BorderRadius.circular(20),
+                                          child: Image.asset(
+                                            Resources.images.reference
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 60),
+                            Container(
+                              height: 120,
+                              width: Get.width/2-64,
+                              margin: const EdgeInsets.only(left: 64),
+                              alignment: Alignment.bottomLeft,
+                              decoration: BoxDecoration(
+                                color: Resources.color.whiteColor,
+                                borderRadius: const BorderRadius.only(
+                                  topRight: Radius.circular(200),
+                                  bottomRight: Radius.circular(200),
+                                ),
+                                boxShadow: [dropShadow()]
+                              ),
+                              child: InkWell(
+                                borderRadius: const BorderRadius.only(
+                                  topRight: Radius.circular(200),
+                                  bottomRight: Radius.circular(200),
+                                ),
+                                onTap: (){},
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      padding: const EdgeInsets.all(8),
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(20),
+                                        child: Image.asset(
+                                          Resources.images.exercise
+                                        ),
+                                      ),
+                                    ),
+                                    const SizedBox(width: 32),
+                                    Text(
+                                      "Tabletop Excercise",
+                                      style: myTextTheme.headline5!.copyWith(
+                                        fontSize: 28,
+                                        fontWeight: FontWeight.bold
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 100),
                           ],
                         )
                       ],
