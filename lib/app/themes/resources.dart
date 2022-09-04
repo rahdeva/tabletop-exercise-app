@@ -23,6 +23,8 @@ class AppColors{
   Color blueColor2 = const Color(0xFF2C5068);
   Color purpleColor = const Color(0xFFCB90D0);
   Color orangeColor = const Color(0xFFD0A390);
+  Color chocoColor = const Color.fromARGB(178, 208, 163, 144);
+  Color chocoColor2 = const Color(0xFF886760);
   Color slate300 = const Color(0xFFCBD5E1);
   Color slate500 = const Color(0xFF64748B);
 }

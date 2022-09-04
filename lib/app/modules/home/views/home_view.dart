@@ -518,7 +518,7 @@ class HomeView extends GetView<HomeController> {
                                   topRight: Radius.circular(200),
                                   bottomRight: Radius.circular(200),
                                 ),
-                                onTap: (){},
+                                onTap: () => Get.toNamed(Routes.TABLETOP_EXERCISE),
                                 child: Row(
                                   children: [
                                     Container(

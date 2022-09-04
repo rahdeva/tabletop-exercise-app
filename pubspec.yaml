@@ -22,5 +22,6 @@ flutter:
   assets: 
     - assets/images/
     - assets/icons/
+    - assets/exercise/
   uses-material-design: true
 
