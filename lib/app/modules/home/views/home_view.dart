@@ -340,7 +340,7 @@ class HomeView extends GetView<HomeController> {
                                   topRight: Radius.circular(200),
                                   bottomRight: Radius.circular(200),
                                 ),
-                                onTap: (){},
+                                onTap: () => controller.klikLink(controller.linkReferences),
                                 child: Row(
                                   children: [
                                     Container(
@@ -384,7 +384,7 @@ class HomeView extends GetView<HomeController> {
                                     topLeft: Radius.circular(200),
                                     bottomLeft: Radius.circular(200),
                                   ),
-                                  onTap: (){},
+                                  onTap: () => controller.klikLink(controller.linkVehicle),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.end,
                                     children: [
@@ -429,7 +429,7 @@ class HomeView extends GetView<HomeController> {
                                   topRight: Radius.circular(200),
                                   bottomRight: Radius.circular(200),
                                 ),
-                                onTap: (){},
+                                onTap: () => controller.klikLink(controller.linkReporting),
                                 child: Row(
                                   children: [
                                     Container(
@@ -473,7 +473,7 @@ class HomeView extends GetView<HomeController> {
                                     topLeft: Radius.circular(200),
                                     bottomLeft: Radius.circular(200),
                                   ),
-                                  onTap: (){},
+                                  onTap: () => controller.klikLink(controller.linkRealTabletop),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.end,
                                     children: [

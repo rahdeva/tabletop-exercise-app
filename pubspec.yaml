@@ -2,26 +2,26 @@ name: tabletop_exercise_app
 version: 1.0.0+1
 publish_to: none
 description: A new Flutter project.
-environment: 
+environment:
   sdk: '>=2.17.6 <3.0.0'
 
-dependencies: 
+dependencies:
   cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
   get: 4.6.5
   google_fonts: 3.0.1
   simple_gradient_text: 1.2.3
-  flutter: 
-    sdk: flutter
+  url_launcher: ^6.1.5
 
-dev_dependencies: 
+dev_dependencies:
   flutter_lints: ^2.0.0
-  flutter_test: 
+  flutter_test:
     sdk: flutter
 
-flutter: 
-  assets: 
+flutter:
+  assets:
     - assets/images/
     - assets/icons/
     - assets/exercise/
   uses-material-design: true
-

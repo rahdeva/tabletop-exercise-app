@@ -45,10 +45,14 @@ class TabletopExerciseView extends GetView<TabletopExerciseController> {
             ),
             // Runway 2
             Positioned(
-              bottom: Get.height/2.41,
-              child: Image.asset(
-                "assets/exercise/runway2.png",
-                width: Get.width,
+              bottom: Get.height/2.4,
+              width: Get.width,
+              child: Align(
+                alignment: Alignment.center,
+                child: Image.asset(
+                  "assets/exercise/runway2.png",
+                  width: Get.width - 100,
+                ),
               ),
             ),
             // Fire Station
