@@ -153,7 +153,7 @@ class ContactView extends GetView<ContactController> {
                                 margin: const EdgeInsets.only(top: 50, bottom: 100),
                                 child: InkWell(
                                   borderRadius: BorderRadius.circular(200),
-                                  onTap: (){},
+                                  onTap: () => controller.klikLink(controller.linkWA),
                                   child: CircleAvatar(
                                     backgroundColor: Resources.color.greenColor1,
                                     radius: 120,
@@ -170,7 +170,7 @@ class ContactView extends GetView<ContactController> {
                                 margin: const EdgeInsets.only(top: 50, bottom: 100),
                                 child: InkWell(
                                   borderRadius: BorderRadius.circular(200),
-                                  onTap: (){},
+                                  onTap: () => controller.klikLink(controller.linkIG),
                                   child: CircleAvatar(
                                     backgroundColor: Resources.color.greenColor1,
                                     radius: 120,
@@ -187,7 +187,7 @@ class ContactView extends GetView<ContactController> {
                                 margin: const EdgeInsets.only(top: 50, bottom: 100),
                                 child: InkWell(
                                   borderRadius: BorderRadius.circular(200),
-                                  onTap: (){},
+                                  onTap: () => controller.klikLink(controller.linkPoltekbang),
                                   child: CircleAvatar(
                                     backgroundColor: Resources.color.greenColor1,
                                     radius: 120,
