@@ -206,9 +206,14 @@ class HomeView extends GetView<HomeController> {
                               width: 50,
                             ),
                             const SizedBox(width: 24),
-                            Text(
-                              "@ppkp.poltekbangplg",
-                              style: myTextTheme.headline4,
+                            InkWell(
+                              onTap: () => controller.klikLink(controller.linkInstagram),
+                              child: Text(
+                                "@ppkp.poltekbangplg",
+                                style: myTextTheme.headline4!.copyWith(
+                                  decoration: TextDecoration.underline
+                                ),
+                              ),
                             )
                           ],
                         ),

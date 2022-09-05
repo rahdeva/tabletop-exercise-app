@@ -6,6 +6,7 @@ class HomeController extends GetxController {
   String linkVehicle = "https://pub.dev/packages/url_launcher";
   String linkReporting = "https://www.figma.com/file/aksNLga75ZUK5OqBvhb2Gy/Tabletop-App?node-id=803%3A9203";
   String linkRealTabletop = "https://www.figma.com/file/aksNLga75ZUK5OqBvhb2Gy/Tabletop-App?node-id=803%3A9203";
+  String linkInstagram = "https://www.instagram.com/ppkp.poltekbangplg";
 
   void klikLink(String link) async {
     final Uri url = Uri.parse(link);

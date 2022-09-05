@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:simple_gradient_text/simple_gradient_text.dart';
 import 'package:tabletop_exercise_app/app/routes/app_pages.dart';
 import 'package:tabletop_exercise_app/app/themes/resources.dart';
 import 'package:tabletop_exercise_app/app/themes/text_theme.dart';
