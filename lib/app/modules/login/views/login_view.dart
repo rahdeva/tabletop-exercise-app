@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:tabletop_exercise_app/app/routes/app_pages.dart';
 import 'package:tabletop_exercise_app/app/themes/resources.dart';
 import 'package:tabletop_exercise_app/app/themes/text_theme.dart';
 import 'package:tabletop_exercise_app/app/widgets/form/password_text_field_widget.dart';
@@ -83,7 +82,7 @@ class ContentLogin extends GetView<LoginController> {
                         fontWeight: FontWeight.bold
                       ),
                     ),
-                    const SizedBox(height: 16),
+                    const SizedBox(height: 24),
                     Text(
                       'Login into your account',
                       style: myTextTheme.subtitle1!.copyWith(
@@ -91,7 +90,7 @@ class ContentLogin extends GetView<LoginController> {
                         fontWeight: FontWeight.bold
                       ),
                     ),
-                    const SizedBox(height: 16),
+                    const SizedBox(height: 24),
                     Image.asset(
                       Resources.images.ppkpIcon,
                       width: 100,
@@ -99,13 +98,13 @@ class ContentLogin extends GetView<LoginController> {
                     const SizedBox(height: 24),
                     TextFieldWidget(
                       margin: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                      controller: controller.emailC,
-                      keyboardType: TextInputType.emailAddress,
+                      controller: controller.nameC,
+                      keyboardType: TextInputType.name,
                       readOnly: false,
                       style: myTextTheme.subtitle1!.copyWith(
                         color: Resources.color.blackColor
                       ),
-                      text: "Email",
+                      text: "Username",
                     ),
                     PasswordTextFieldWidget(
                       margin: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
@@ -117,20 +116,6 @@ class ContentLogin extends GetView<LoginController> {
                       text: "Password",
                     ),
                     Container(
-                      alignment: Alignment.centerRight,
-                      margin: const EdgeInsets.symmetric(horizontal: 24),
-                      child: TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          "forgot password?",
-                          textAlign: TextAlign.start,
-                          style: myTextTheme.overline!.copyWith(
-                            color: Resources.color.slate500
-                          ),
-                        ),
-                      ),
-                    ),
-                    Container(
                         margin: const EdgeInsets.fromLTRB(24, 24, 24, 0),
                         width: Get.width,
                         height: 60,
@@ -138,10 +123,7 @@ class ContentLogin extends GetView<LoginController> {
                         child: Obx(
                           () => ElevatedButton(
                             onPressed: () {
-                              Get.offAllNamed(Routes.HOME);
-                              // if (controller.isLoading.isFalse) {
-                              //   controller.loginEmail();
-                              // }
+                              controller.loginEmail();
                             },
                             style: ButtonStyle(
                               backgroundColor: MaterialStateProperty.all(
@@ -166,29 +148,7 @@ class ContentLogin extends GetView<LoginController> {
                           ),
                         ),
                       ),
-                    Container(
-                        margin: const EdgeInsets.only(top: 16),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "Didn't have any account yet?", 
-                              style: myTextTheme.bodyText2
-                            ),
-                            TextButton(
-                              onPressed: () => Get.toNamed(Routes.REGISTER), 
-                              child: Text(
-                                "Register!", 
-                                style: myTextTheme.bodyText2?.copyWith(
-                                  color: Resources.color.blackColor,
-                                  fontWeight: FontWeight.bold,
-                                  decoration: TextDecoration.underline,
-                                )
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
+                    
                   ],
                 ),
               ),

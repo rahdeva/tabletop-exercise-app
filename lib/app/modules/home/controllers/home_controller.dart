@@ -2,10 +2,10 @@ import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomeController extends GetxController {
-  String linkReferences = "https://stackoverflow.com/questions/56512036/how-do-i-link-http-url-to-flutter-web";
-  String linkVehicle = "https://pub.dev/packages/url_launcher";
-  String linkReporting = "https://www.figma.com/file/aksNLga75ZUK5OqBvhb2Gy/Tabletop-App?node-id=803%3A9203";
-  String linkRealTabletop = "https://www.figma.com/file/aksNLga75ZUK5OqBvhb2Gy/Tabletop-App?node-id=803%3A9203";
+  String linkReferences = "https://drive.google.com/drive/folders/1aBm2glzhQhqqmImWlrTnqJ-LvsaopRf2?usp=sharing";
+  String linkVehicle = "https://drive.google.com/drive/folders/1lkwnKW6q1CiteLabdc2R4GN5_bw8A1nv?usp=sharing";
+  String linkReporting = "https://drive.google.com/drive/folders/12fOSxP2mp_2Ey9kwnMrjBDxqIm4G7Zu-?usp=sharing";
+  String linkRealTabletop = "https://sketchfab.com/3d-models/airport-schonefeld-terminal-e1789d9d52ef47efae10905297c1d163";
   String linkInstagram = "https://www.instagram.com/ppkp.poltekbangplg";
 
   void klikLink(String link) async {
