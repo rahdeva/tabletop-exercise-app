@@ -7,14 +7,14 @@ class LoginController extends GetxController {
   RxBool rememberme = false.obs;
   RxBool isHidden = true.obs;
   TextEditingController nameC = TextEditingController(
-    text: "ppkp.poltekbamgplg"
+    text: "ppkp.poltekbangplg"
   );
   TextEditingController passwordC = TextEditingController();
   // TextEditingController emailResetC = TextEditingController();
   // final LoginProvider service = Get.find<LoginProvider>();
 
   void loginEmail(){
-    if(nameC.value.text == "ppkp.poltekbamgplg" && passwordC.value.text == "poltekbang"){
+    if(nameC.value.text == "ppkp.poltekbangplg" && passwordC.value.text == "poltekbang"){
       Get.offAllNamed(Routes.HOME);
     } else{
       Get.defaultDialog(
