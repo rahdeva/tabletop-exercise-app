@@ -54,7 +54,11 @@ class NewTextFieldWidget extends StatelessWidget {
             borderRadius: BorderRadius.circular(14),
           ),
         ),
+        onChanged: ((value) {
+          print(value);
+        }),
       ),
     );
   }
 }
+

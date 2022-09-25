@@ -6,4 +6,7 @@ class AreaConceptController extends GetxController {
   TextEditingController practicalC = TextEditingController();
   TextEditingController theoreticalC = TextEditingController();
   TextEditingController notesC = TextEditingController();
+  RxString name = "Airplane Name".obs;
+  RxString practical = "0 m".obs;
+  RxString theoretical = "0 m".obs;
 }

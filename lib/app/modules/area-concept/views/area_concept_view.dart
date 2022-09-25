@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tabletop_exercise_app/app/themes/resources.dart';
 import 'package:tabletop_exercise_app/app/themes/text_theme.dart';
-import 'package:tabletop_exercise_app/app/widgets/form/new_text_field_widget.dart';
-import 'package:tabletop_exercise_app/app/widgets/form/text_field_widget.dart';
 
 import '../controllers/area_concept_controller.dart';
 
@@ -26,6 +24,47 @@ class AreaConceptView extends GetView<AreaConceptController> {
                   image: Resources.appImages.areaConceptImage
                 )
               ),
+              child: Stack(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(left: Get.width/40, top: 24),
+                    // child: Text(),
+                    child: Obx(
+                      () => Text(
+                        controller.name.value,
+                        style: myTextTheme.headline6!.copyWith(
+                          color: Resources.color.blackColor,
+                          fontWeight: FontWeight.w600
+                        ),
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    top: Get.height/2 +16,
+                    right: (Get.width-400)/20,
+                    child: Obx(
+                      () => Text(
+                        controller.theoretical.value,
+                        style: myTextTheme.subtitle1!.copyWith(
+                          color: Resources.color.blackColor
+                        ),
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    top: Get.height/2 +16,
+                    right: (Get.width-400)/4.8,
+                    child: Obx(
+                      () => Text(
+                        controller.practical.value,
+                        style: myTextTheme.subtitle1!.copyWith(
+                          color: Resources.color.blackColor
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
           Container(
@@ -41,7 +80,8 @@ class AreaConceptView extends GetView<AreaConceptController> {
                     Text(
                       "Area Concept",
                       style: myTextTheme.headline5!.copyWith(
-                        color: Resources.color.blackColor
+                        color: Resources.color.blackColor,
+                        fontWeight: FontWeight.bold
                       ),
                     ),
                     IconButton(
@@ -55,6 +95,48 @@ class AreaConceptView extends GetView<AreaConceptController> {
                   ],
                 ),
                 const SizedBox(height: 24),
+                Text(
+                  "Aircraft",
+                  style: myTextTheme.subtitle1!.copyWith(
+                    color: Resources.color.blackColor
+                  ),
+                ),
+                const SizedBox(height: 16),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(14),
+                  ),
+                  child: TextField(
+                    controller: controller.nameC,
+                    keyboardType: TextInputType.name,
+                    autocorrect: false,
+                    style: myTextTheme.subtitle1!.copyWith(
+                      color: Resources.color.blackColor
+                    ),
+                    decoration: InputDecoration(
+                      hintStyle: myTextTheme.subtitle1!.copyWith(
+                        color: Colors.grey
+                      ),
+                      hintText: "Aircraft Name",
+                      isDense: true,
+                      filled: true,
+                      hoverColor: Resources.color.whiteColor,
+                      fillColor: Resources.color.whiteColor,
+                      contentPadding: const EdgeInsets.all(20),
+                      border:  OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Resources.color.slate300
+                        ),
+                        borderRadius: BorderRadius.circular(14),
+                      ),
+                    ),
+                    onChanged: ((value) {
+                      controller.name.value = value;
+                    }),
+                  ),
+                ),
+                const SizedBox(height: 32),
                 Row(
                   children: [
                     Container(
@@ -116,15 +198,39 @@ class AreaConceptView extends GetView<AreaConceptController> {
                   ),
                 ),
                 const SizedBox(height: 16),
-                NewTextFieldWidget(
-                  margin: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-                  controller: controller.practicalC,
-                  keyboardType: TextInputType.number,
-                  readOnly: false,
-                  style: myTextTheme.subtitle1!.copyWith(
-                    color: Resources.color.blackColor
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(14),
                   ),
-                  text: "0 m",
+                  child: TextField(
+                    controller: controller.practicalC,
+                    keyboardType: TextInputType.number,
+                    autocorrect: false,
+                    style: myTextTheme.subtitle1!.copyWith(
+                      color: Resources.color.blackColor
+                    ),
+                    decoration: InputDecoration(
+                      hintStyle: myTextTheme.subtitle1!.copyWith(
+                        color: Colors.grey
+                      ),
+                      hintText: "0 m",
+                      isDense: true,
+                      filled: true,
+                      hoverColor: Resources.color.whiteColor,
+                      fillColor: Resources.color.whiteColor,
+                      contentPadding: const EdgeInsets.all(20),
+                      border:  OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Resources.color.slate300
+                        ),
+                        borderRadius: BorderRadius.circular(14),
+                      ),
+                    ),
+                    onChanged: ((value) {
+                      controller.practical.value = value;
+                    }),
+                  ),
                 ),
                 const SizedBox(height: 16),
                 Text(
@@ -134,21 +240,46 @@ class AreaConceptView extends GetView<AreaConceptController> {
                   ),
                 ),
                 const SizedBox(height: 16),
-                NewTextFieldWidget(
-                  margin: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-                  controller: controller.theoreticalC,
-                  keyboardType: TextInputType.number,
-                  readOnly: false,
-                  style: myTextTheme.subtitle1!.copyWith(
-                    color: Resources.color.blackColor
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(14),
                   ),
-                  text: "0 m",
+                  child: TextField(
+                    controller: controller.theoreticalC,
+                    keyboardType: TextInputType.number,
+                    autocorrect: false,
+                    style: myTextTheme.subtitle1!.copyWith(
+                      color: Resources.color.blackColor
+                    ),
+                    decoration: InputDecoration(
+                      hintStyle: myTextTheme.subtitle1!.copyWith(
+                        color: Colors.grey
+                      ),
+                      hintText: "0 m",
+                      isDense: true,
+                      filled: true,
+                      hoverColor: Resources.color.whiteColor,
+                      fillColor: Resources.color.whiteColor,
+                      contentPadding: const EdgeInsets.all(20),
+                      border:  OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Resources.color.slate300
+                        ),
+                        borderRadius: BorderRadius.circular(14),
+                      ),
+                    ),
+                    onChanged: ((value) {
+                      controller.theoretical.value = value;
+                    }),
+                  ),
                 ),
                 const SizedBox(height: 24),
                 Text(
                   "Notes",
                   style: myTextTheme.headline6!.copyWith(
-                    color: Resources.color.blackColor
+                    color: Resources.color.blackColor,
+                    fontWeight: FontWeight.w600
                   ),
                 ),
                 const SizedBox(height: 16),
