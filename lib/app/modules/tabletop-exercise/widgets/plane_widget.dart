@@ -12,6 +12,7 @@ class _PlaneWidgetState extends State<PlaneWidget> {
   // double angle = 0.0;
   double xPosition = -100;
   double yPosition = 200;
+  bool isPlaneActive = false;
 
   @override
   Widget build(BuildContext context) {
@@ -25,9 +26,25 @@ class _PlaneWidgetState extends State<PlaneWidget> {
             yPosition += tapInfo.delta.dy;
           });
         },
-        child: Image.asset(
-          "assets/exercise/pesawat1.png",
-          width: Get.width/5,
+        child: Column(
+          children: [
+            // isPlaneActive
+            // ? IconButton(
+            //   onPressed: (){
+            //           setState(() {
+            //             angle += 15 * math.pi / 160;
+            //           });
+            //         },
+            //         icon: const Icon(
+            //           Icons.rotate_left_rounded,
+            //           color: Colors.white,
+            //         ),
+            //       ),
+            Image.asset(
+              "assets/exercise/pesawat1.png",
+              width: Get.width/5,
+            ),
+          ],
         ),
       ),
     );

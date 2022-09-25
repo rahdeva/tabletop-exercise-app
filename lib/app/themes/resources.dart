@@ -92,6 +92,9 @@ class Images {
   String exercise = 'assets/icons/exercise.png';
   String appRate = 'assets/icons/app-rate.png';
   String areaConcept = 'assets/icons/area-concept.png';
+  String crash = 'assets/icons/crash.png';
+  String fire = 'assets/lottie/fire.json';
+  String water = 'assets/lottie/water.json';
   // String areaConceptImage = 'assets/images/area-concept-image.png';
 }
 
