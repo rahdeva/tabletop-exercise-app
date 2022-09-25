@@ -66,6 +66,9 @@ class AppImages {
   AssetImage waIcon = const AssetImage(
     'assets/images/wa-icon.png'
   );
+  AssetImage areaConceptImage = const AssetImage(
+    'assets/images/area-concept-image.png'
+  );
 }
 
 class Images {
@@ -89,6 +92,7 @@ class Images {
   String exercise = 'assets/icons/exercise.png';
   String appRate = 'assets/icons/app-rate.png';
   String areaConcept = 'assets/icons/area-concept.png';
+  // String areaConceptImage = 'assets/images/area-concept-image.png';
 }
 
 
