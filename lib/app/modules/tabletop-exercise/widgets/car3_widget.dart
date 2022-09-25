@@ -60,8 +60,8 @@ class _Car3WidgetState extends State<Car3Widget> {
                     onPressed: (){
                       setState(() {
                         isCar3Active = false;
-                        xPosition += 26;
-                        yPosition += 38;
+                        xPosition += 43;
+                        yPosition += 40;
                       });
                     },
                     icon: const Icon(
@@ -76,7 +76,10 @@ class _Car3WidgetState extends State<Car3Widget> {
               children: [
                 Transform.rotate(
                   angle: angle,
-                  child: Image.asset("assets/exercise/car3.png")
+                  child: Image.asset(
+                    "assets/exercise/car3.png",
+                    width: Get.width/45,
+                  )
                 ),
               ],
             ),

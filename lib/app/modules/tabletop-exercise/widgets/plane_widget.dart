@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class PlaneWidget extends StatefulWidget {
   const PlaneWidget({Key? key}) : super(key: key);
@@ -24,7 +25,10 @@ class _PlaneWidgetState extends State<PlaneWidget> {
             yPosition += tapInfo.delta.dy;
           });
         },
-        child: Image.asset("assets/exercise/pesawat1.png"),
+        child: Image.asset(
+          "assets/exercise/pesawat1.png",
+          width: Get.width/5,
+        ),
       ),
     );
   }

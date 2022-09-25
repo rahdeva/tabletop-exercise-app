@@ -11,7 +11,7 @@ class Car1Widget extends StatefulWidget {
 
 class _Car1WidgetState extends State<Car1Widget> {
   double angle = 0;
-  double xPosition = Get.width/3.25;
+  double xPosition = Get.width/3.15;
   double yPosition = Get.height/4.75;
   bool isCar1Active = false;
 
@@ -59,8 +59,8 @@ class _Car1WidgetState extends State<Car1Widget> {
                     onPressed: (){
                       setState(() {
                         isCar1Active = false;
-                        xPosition += 26;
-                        yPosition += 38;
+                        xPosition += 43;
+                        yPosition += 40;
                       });
                     },
                     icon: const Icon(
@@ -75,7 +75,10 @@ class _Car1WidgetState extends State<Car1Widget> {
               children: [
                 Transform.rotate(
                   angle: angle,
-                  child: Image.asset("assets/exercise/car1.png")
+                  child: Image.asset(
+                    "assets/exercise/car1.png",
+                    width: Get.width/45,
+                  )
                 ),
               ],
             ),

@@ -12,8 +12,8 @@ class Car2Widget extends StatefulWidget {
 
 class _Car2WidgetState extends State<Car2Widget> {
   double angle = 0;
-  double xPosition = Get.width/2.75;
-  double yPosition = Get.height/4.75;
+  double xPosition = Get.width/2.80;
+  double yPosition = Get.height/4.85;
   bool isCar2Active = false;
 
   @override
@@ -60,8 +60,8 @@ class _Car2WidgetState extends State<Car2Widget> {
                     onPressed: (){
                       setState(() {
                         isCar2Active = false;
-                        xPosition += 26;
-                        yPosition += 38;
+                        xPosition += 38;
+                        yPosition += 40;
                       });
                     },
                     icon: const Icon(
@@ -76,7 +76,10 @@ class _Car2WidgetState extends State<Car2Widget> {
               children: [
                 Transform.rotate(
                   angle: angle,
-                  child: Image.asset("assets/exercise/car2.png")
+                  child: Image.asset(
+                    "assets/exercise/car2.png",
+                    width: Get.width/35,
+                  )
                 ),
               ],
             ),
