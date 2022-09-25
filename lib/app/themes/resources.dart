@@ -87,6 +87,8 @@ class Images {
   String vehicle = 'assets/icons/vehicle.png';
   String realTabletop = 'assets/icons/real-tabletop.png';
   String exercise = 'assets/icons/exercise.png';
+  String appRate = 'assets/icons/app-rate.png';
+  String areaConcept = 'assets/icons/area-concept.png';
 }
 
 

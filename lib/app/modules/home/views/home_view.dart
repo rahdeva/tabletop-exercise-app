@@ -297,6 +297,38 @@ class HomeView extends GetView<HomeController> {
                             radius: 40,
                           ),
                         ),
+                        Positioned(
+                          top: 1050,
+                          left: 200,
+                          child: CircleAvatar(
+                            backgroundColor: Resources.color.greenColor1,
+                            radius: 40,
+                          ),
+                        ),
+                        Positioned(
+                          top: 1150,
+                          left: 400,
+                          child: CircleAvatar(
+                            backgroundColor: Resources.color.greenColor4,
+                            radius: 25,
+                          ),
+                        ),
+                        Positioned(
+                          top: 1250,
+                          right: 200,
+                          child: CircleAvatar(
+                            backgroundColor: Resources.color.greenColor3,
+                            radius: 25,
+                          ),
+                        ),
+                        Positioned(
+                          top: 1300,
+                          right: 500,
+                          child: CircleAvatar(
+                            backgroundColor: Resources.color.greenColor4,
+                            radius: 40,
+                          ),
+                        ),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -496,6 +528,95 @@ class HomeView extends GetView<HomeController> {
                                           borderRadius: BorderRadius.circular(20),
                                           child: Image.asset(
                                             Resources.images.reference
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 60),
+                            Container(
+                              height: 120,
+                              width: Get.width/2-64,
+                              margin: const EdgeInsets.only(left: 64),
+                              alignment: Alignment.bottomLeft,
+                              decoration: BoxDecoration(
+                                color: Resources.color.whiteColor,
+                                borderRadius: const BorderRadius.only(
+                                  topRight: Radius.circular(200),
+                                  bottomRight: Radius.circular(200),
+                                ),
+                                boxShadow: [dropShadow()]
+                              ),
+                              child: InkWell(
+                                borderRadius: const BorderRadius.only(
+                                  topRight: Radius.circular(200),
+                                  bottomRight: Radius.circular(200),
+                                ),
+                                onTap: () => controller.klikLink(controller.linkAppRate),
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      padding: const EdgeInsets.all(8),
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(20),
+                                        child: Image.asset(
+                                          Resources.images.appRate
+                                        ),
+                                      ),
+                                    ),
+                                    const SizedBox(width: 32),
+                                    Text(
+                                      "Application Rate",
+                                      style: myTextTheme.headline5!.copyWith(
+                                        fontSize: 28,
+                                        fontWeight: FontWeight.bold
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 60),
+                            Align(
+                              alignment: Alignment.centerRight,
+                              child: Container(
+                                height: 120,
+                                width: Get.width/2-64,
+                                margin: const EdgeInsets.only(right: 64),
+                                decoration: BoxDecoration(
+                                  color: Resources.color.whiteColor,
+                                  borderRadius: const BorderRadius.only(
+                                    topLeft: Radius.circular(200),
+                                    bottomLeft: Radius.circular(200),
+                                  ),
+                                  boxShadow: [dropShadow()]
+                                ),
+                                child: InkWell(
+                                  borderRadius: const BorderRadius.only(
+                                    topLeft: Radius.circular(200),
+                                    bottomLeft: Radius.circular(200),
+                                  ),
+                                  onTap: () => Get.toNamed(Routes.AREA_CONCEPT),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.end,
+                                    children: [
+                                      Text(
+                                        "Area Concept",
+                                        style: myTextTheme.headline5!.copyWith(
+                                          fontSize: 28,
+                                          fontWeight: FontWeight.bold
+                                        ),
+                                      ),
+                                      const SizedBox(width: 32),
+                                      Container(
+                                        padding: const EdgeInsets.all(8),
+                                        child: ClipRRect(
+                                          borderRadius: BorderRadius.circular(20),
+                                          child: Image.asset(
+                                            Resources.images.areaConcept
                                           ),
                                         ),
                                       ),

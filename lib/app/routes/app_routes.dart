@@ -12,6 +12,7 @@ abstract class Routes {
   static const CONTACT = _Paths.CONTACT;
   static const LECTURER = _Paths.LECTURER;
   static const TABLETOP_EXERCISE = _Paths.TABLETOP_EXERCISE;
+  static const AREA_CONCEPT = _Paths.AREA_CONCEPT;
 }
 
 abstract class _Paths {
@@ -23,4 +24,5 @@ abstract class _Paths {
   static const CONTACT = '/contact';
   static const LECTURER = '/lecturer';
   static const TABLETOP_EXERCISE = '/tabletop-exercise';
+  static const AREA_CONCEPT = '/area-concept';
 }
