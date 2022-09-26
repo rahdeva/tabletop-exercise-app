@@ -64,13 +64,13 @@ class _Car2WidgetState extends State<Car2Widget> {
                       setState(() {
                         if (isSpray == true) {
                           isSpray = false;
-                          xPosition += 75;
-                          yPosition += 16;
+                          xPosition += 125;
+                          yPosition += 28;
                         }
                         else {
                           isSpray = true;
-                          xPosition -= 75;
-                          yPosition -= 16;
+                          xPosition -= 125;
+                          yPosition -= 28;
                         }
                       });
                     },
