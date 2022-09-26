@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
 import 'package:get/get.dart';
+import 'package:lottie/lottie.dart';
+import 'package:tabletop_exercise_app/app/themes/resources.dart';
 
 class Car2Widget extends StatefulWidget {
   const Car2Widget({Key? key}) : super(key: key);
@@ -15,6 +17,7 @@ class _Car2WidgetState extends State<Car2Widget> {
   double xPosition = Get.width/2.80;
   double yPosition = Get.height/4.85;
   bool isCar2Active = false;
+  bool isSpray = false;
 
   @override
   Widget build(BuildContext context) {
@@ -56,12 +59,43 @@ class _Car2WidgetState extends State<Car2Widget> {
                       color: Colors.white,
                     ),
                   ),
+                InkWell(
+                    onTap: (){
+                      setState(() {
+                        if (isSpray == true) {
+                          isSpray = false;
+                          xPosition += 75;
+                          yPosition += 16;
+                        }
+                        else {
+                          isSpray = true;
+                          xPosition -= 75;
+                          yPosition -= 16;
+                        }
+                      });
+                    },
+                    child: isSpray
+                      ? const Icon(
+                          Icons.restore,
+                          color: Colors.lightBlue,
+                          size: 28,
+                        )
+                      : Image.asset(
+                          Resources.images.waterIcon,
+                          width: 28,
+                        ),
+                  ),
                 IconButton(
                     onPressed: (){
                       setState(() {
                         isCar2Active = false;
-                        xPosition += 38;
-                        yPosition += 40;
+                        if (isSpray == true) {
+                          yPosition += 40;
+                        }
+                        else {
+                          xPosition += 54;
+                          yPosition += 40;
+                        }
                       });
                     },
                     icon: const Icon(
@@ -72,15 +106,24 @@ class _Car2WidgetState extends State<Car2Widget> {
               ],
             )
             : Container(),
-            Row(
+            Stack(
+              alignment: Alignment.topCenter,
               children: [
-                Transform.rotate(
-                  angle: angle,
-                  child: Image.asset(
-                    "assets/exercise/car2.png",
-                    width: Get.width/35,
+                isSpray
+                ? Transform.rotate(
+                    angle: angle,
+                    child: Image.asset(
+                      Resources.images.water2,
+                      width: Get.width/4.5,
+                    ),
                   )
-                ),
+                : Transform.rotate(
+                    angle: angle,
+                    child: Image.asset(
+                      "assets/exercise/car2.png",
+                      width: Get.width/35,
+                    )
+                  )
               ],
             ),
           ],

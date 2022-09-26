@@ -45,8 +45,8 @@ class _PlaneWidgetState extends State<PlaneWidget> {
                     },
                     child: isCrash
                       ? const Icon(
-                          Icons.replay,
-                          color: Colors.white,
+                          Icons.restore,
+                          color: Colors.orange,
                           size: 28,
                         )
                       : Image.asset(
