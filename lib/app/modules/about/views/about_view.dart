@@ -28,15 +28,16 @@ class AboutView extends GetView<AboutController> {
                 children: [
                   Row(
                     children: [
-                      Image.asset(
-                        Resources.images.poltekbangIcon
-                      ),
                       Padding(
                         padding: const EdgeInsets.all(16.0),
                         child: Image.asset(
                           Resources.images.ppkpIcon,
                         ),
                       ),
+                      Image.asset(
+                        Resources.images.poltekbangIcon
+                      ),
+                      
                     ],
                   ),
                   Row(

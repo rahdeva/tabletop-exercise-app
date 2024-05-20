@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
 import 'package:get/get.dart';
-import 'package:lottie/lottie.dart';
+// import 'package:lottie/lottie.dart';
 import 'package:tabletop_exercise_app/app/themes/resources.dart';
 
 class Car2Widget extends StatefulWidget {

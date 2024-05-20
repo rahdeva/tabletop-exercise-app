@@ -27,15 +27,16 @@ class HomeView extends GetView<HomeController> {
                 children: [
                   Row(
                     children: [
-                      Image.asset(
-                        Resources.images.poltekbangIcon
-                      ),
                       Padding(
                         padding: const EdgeInsets.all(16.0),
                         child: Image.asset(
                           Resources.images.ppkpIcon,
                         ),
                       ),
+                      Image.asset(
+                        Resources.images.poltekbangIcon
+                      ),
+                      
                     ],
                   ),
                   Row(
@@ -209,7 +210,7 @@ class HomeView extends GetView<HomeController> {
                             InkWell(
                               onTap: () => controller.klikLink(controller.linkInstagram),
                               child: Text(
-                                "@ppkp.poltekbangplg",
+                                "@bxwbawean",
                                 style: myTextTheme.headline4!.copyWith(
                                   decoration: TextDecoration.underline
                                 ),

@@ -27,15 +27,16 @@ class ContactView extends GetView<ContactController> {
                 children: [
                   Row(
                     children: [
-                      Image.asset(
-                        Resources.images.poltekbangIcon
-                      ),
                       Padding(
                         padding: const EdgeInsets.all(16.0),
                         child: Image.asset(
                           Resources.images.ppkpIcon,
                         ),
                       ),
+                      Image.asset(
+                        Resources.images.poltekbangIcon
+                      ),
+                      
                     ],
                   ),
                   Row(
@@ -187,7 +188,8 @@ class ContactView extends GetView<ContactController> {
                                 margin: const EdgeInsets.only(top: 50, bottom: 100),
                                 child: InkWell(
                                   borderRadius: BorderRadius.circular(200),
-                                  onTap: () => controller.klikLink(controller.linkPoltekbang),
+                                  // onTap: () => controller.klikLink(controller.linkPoltekbang),
+                                  onTap: (){},
                                   child: CircleAvatar(
                                     backgroundColor: Resources.color.greenColor1,
                                     radius: 120,
