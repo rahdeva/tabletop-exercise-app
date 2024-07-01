@@ -12,7 +12,7 @@ class Car1Widget extends StatefulWidget {
 class _Car1WidgetState extends State<Car1Widget> {
   double angle = 0;
   double xPosition = Get.width/3.15;
-  double yPosition = Get.height/4.75;
+  double yPosition = Get.height/1.45;
   bool isCar1Active = false;
 
   @override

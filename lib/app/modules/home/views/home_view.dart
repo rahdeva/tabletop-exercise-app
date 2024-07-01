@@ -66,7 +66,7 @@ class HomeView extends GetView<HomeController> {
                       InkWell(
                         onTap: () => Get.toNamed(Routes.LECTURER),
                         child: Text(
-                          "Lecturer",
+                          "Personel",
                           style: myTextTheme.headline6!.copyWith(
                             color: Resources.color.blackColor,
                           ),
@@ -427,7 +427,7 @@ class HomeView extends GetView<HomeController> {
                                     mainAxisAlignment: MainAxisAlignment.end,
                                     children: [
                                       Text(
-                                        "ARFF Vehicle",
+                                        "Module",
                                         style: myTextTheme.headline5!.copyWith(
                                           fontSize: 28,
                                           fontWeight: FontWeight.bold

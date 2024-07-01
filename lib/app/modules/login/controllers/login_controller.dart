@@ -14,7 +14,7 @@ class LoginController extends GetxController {
   // final LoginProvider service = Get.find<LoginProvider>();
 
   void loginEmail(){
-    if(nameC.value.text == "HarunThohirAirport" && passwordC.value.text == "HT2024"){
+    if(nameC.value.text == "HarunThohirAirport" && passwordC.value.text == "HarunThohir"){
       Get.offAllNamed(Routes.HOME);
     } else{
       Get.defaultDialog(

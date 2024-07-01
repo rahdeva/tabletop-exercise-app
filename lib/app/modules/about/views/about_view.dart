@@ -67,7 +67,7 @@ class AboutView extends GetView<AboutController> {
                       InkWell(
                         onTap: () => Get.toNamed(Routes.LECTURER),
                         child: Text(
-                          "Lecturer",
+                          "Personel",
                           style: myTextTheme.headline6!.copyWith(
                             color: Resources.color.blackColor,
                           ),

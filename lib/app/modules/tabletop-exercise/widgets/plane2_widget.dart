@@ -3,14 +3,14 @@ import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 import 'package:tabletop_exercise_app/app/themes/resources.dart';
 
-class PlaneWidget extends StatefulWidget {
-  const PlaneWidget({Key? key}) : super(key: key);
+class Plane2Widget extends StatefulWidget {
+  const Plane2Widget({Key? key}) : super(key: key);
 
   @override
-  State<PlaneWidget> createState() => _PlaneWidgetState();
+  State<Plane2Widget> createState() => _Plane2WidgetState();
 }
 
-class _PlaneWidgetState extends State<PlaneWidget> {
+class _Plane2WidgetState extends State<Plane2Widget> {
   // double angle = 0.0;
   double xPosition = -100;
   double yPosition = 200;
@@ -74,8 +74,8 @@ class _PlaneWidgetState extends State<PlaneWidget> {
             Stack(
               children: [
                 Image.asset(
-                  "assets/images/pesawat1.png",
-                  width: Get.width/5,
+                  "assets/images/img_new_plane.png",
+                  width: Get.width/8,
                 ),
                 isCrash
                 ? Positioned(

@@ -64,7 +64,7 @@ class ContactView extends GetView<ContactController> {
                       InkWell(
                         onTap: () => Get.toNamed(Routes.LECTURER),
                         child: Text(
-                          "Lecturer",
+                          "Personel",
                           style: myTextTheme.headline6!.copyWith(
                             color: Resources.color.blackColor,
                           ),

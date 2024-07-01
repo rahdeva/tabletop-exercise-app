@@ -17,7 +17,7 @@ class ButtonWidget extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPress,
       style: ElevatedButton.styleFrom(
-        primary: Colors.transparent,
+        backgroundColor: Colors.transparent,
         shadowColor: Colors.transparent,
       ),
       child: Text(

@@ -1,3 +1,5 @@
+// import 'dart:js_interop';
+
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -63,7 +65,7 @@ class LecturerView extends GetView<LecturerController> {
                       InkWell(
                         onTap: (){},
                         child: Text(
-                          "Lecturer",
+                          "Personel",
                           style: myTextTheme.headline6!.copyWith(
                             color: Resources.color.whiteColor,
                             fontWeight: FontWeight.bold,
@@ -145,305 +147,329 @@ class LecturerView extends GetView<LecturerController> {
                           radius: 50,
                         ),
                       ),
-                      Column(
-                        children: [
-                          Container(
-                            width: Get.width,
-                            margin: const EdgeInsets.symmetric(
-                              horizontal: 64,
-                              vertical: 64
-                            ),
-                            child: Row(
-                              children: [
-                                CircleAvatar(
-                                  backgroundColor: Resources.color.greenColor1,
-                                  radius: 200,
-                                  child: Align(
-                                    alignment: Alignment.topCenter,
-                                    child: CircleAvatar(
-                                      radius: 180,
-                                      backgroundImage: Resources.appImages.lecturer1,
-                                    ),
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Container(
-                                    margin: const EdgeInsets.only(left: 64),
-                                    padding: const EdgeInsets.all(32),
-                                    height: 250,
-                                    decoration: BoxDecoration(
-                                      color: Resources.color.greenColor9,
-                                      borderRadius: BorderRadius.circular(55),
-                                      boxShadow: [dropShadow()]
-                                    ),
-                                    child: Column(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          "Anton Abdullah, S.T., M.M.",
-                                          style: myTextTheme.headline4,
-                                        ),
-                                        Text(
-                                          "NIDN : 4225107801",
-                                          style: myTextTheme.headline4,
-                                        ),
-                                        Text(
-                                          "Status : Dosen Tetap",
-                                          style: myTextTheme.headline4,
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                )
-                              ],
+                      Center(
+                        child: Container(
+                          height: 2000,
+                          width: 1414,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AppImages().struktur,
+                              fit: BoxFit.fill,
                             ),
                           ),
-                          Container(
-                            width: Get.width,
-                            margin: const EdgeInsets.symmetric(
-                              horizontal: 64,
-                              vertical: 64
-                            ),
-                            child: Row(
-                              children: [
-                                CircleAvatar(
-                                  backgroundColor: Resources.color.greenColor1,
-                                  radius: 200,
-                                  child: Align(
-                                    alignment: Alignment.topCenter,
-                                    child: CircleAvatar(
-                                      radius: 180,
-                                      backgroundImage: Resources.appImages.lecturer2,
-                                    ),
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Container(
-                                    margin: const EdgeInsets.only(left: 64),
-                                    padding: const EdgeInsets.all(32),
-                                    height: 250,
-                                    decoration: BoxDecoration(
-                                      color: Resources.color.greenColor9,
-                                      borderRadius: BorderRadius.circular(55),
-                                      boxShadow: [dropShadow()]
-                                    ),
-                                    child: Column(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          "Sutiyo, S.Sos., M.M.",
-                                          style: myTextTheme.headline4,
-                                        ),
-                                        Text(
-                                          "NIDN : 4211106801",
-                                          style: myTextTheme.headline4,
-                                        ),
-                                        Text(
-                                          "Status : Dosen Tetap",
-                                          style: myTextTheme.headline4,
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
-                        ],
+                        ),
                       ),
+                      // Column(
+                      //   children: [
+                      //     Container(
+                      //       width: Get.width,
+                      //       margin: const EdgeInsets.symmetric(
+                      //         horizontal: 64,
+                      //         vertical: 64
+                      //       ),
+                      //       child: Row(
+                      //         children: [
+                      //           CircleAvatar(
+                      //             backgroundColor: Resources.color.greenColor1,
+                      //             radius: 200,
+                      //             child: Align(
+                      //               alignment: Alignment.topCenter,
+                      //               child: CircleAvatar(
+                      //                 radius: 180,
+                      //                 backgroundImage: Resources.appImages.lecturer1,
+                      //               ),
+                      //             ),
+                      //           ),
+                      //           Expanded(
+                      //             child: Container(
+                      //               margin: const EdgeInsets.only(left: 64),
+                      //               padding: const EdgeInsets.all(32),
+                      //               height: 250,
+                      //               decoration: BoxDecoration(
+                      //                 color: Resources.color.greenColor9,
+                      //                 borderRadius: BorderRadius.circular(55),
+                      //                 boxShadow: [dropShadow()]
+                      //               ),
+                      //               child: Column(
+                      //                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      //                 crossAxisAlignment: CrossAxisAlignment.start,
+                      //                 children: [
+                      //                   Text(
+                      //                     "Anton Abdullah, S.T., M.M.",
+                      //                     style: myTextTheme.headline4,
+                      //                   ),
+                      //                   Text(
+                      //                     "NIDN : 4225107801",
+                      //                     style: myTextTheme.headline4,
+                      //                   ),
+                      //                   Text(
+                      //                     "Status : Dosen Tetap",
+                      //                     style: myTextTheme.headline4,
+                      //                   ),
+                      //                 ],
+                      //               ),
+                      //             ),
+                      //           )
+                      //         ],
+                      //       ),
+                      //     ),
+                      //     Container(
+                      //       width: Get.width,
+                      //       margin: const EdgeInsets.symmetric(
+                      //         horizontal: 64,
+                      //         vertical: 64
+                      //       ),
+                      //       child: Row(
+                      //         children: [
+                      //           CircleAvatar(
+                      //             backgroundColor: Resources.color.greenColor1,
+                      //             radius: 200,
+                      //             child: Align(
+                      //               alignment: Alignment.topCenter,
+                      //               child: CircleAvatar(
+                      //                 radius: 180,
+                      //                 backgroundImage: Resources.appImages.lecturer2,
+                      //               ),
+                      //             ),
+                      //           ),
+                      //           Expanded(
+                      //             child: Container(
+                      //               margin: const EdgeInsets.only(left: 64),
+                      //               padding: const EdgeInsets.all(32),
+                      //               height: 250,
+                      //               decoration: BoxDecoration(
+                      //                 color: Resources.color.greenColor9,
+                      //                 borderRadius: BorderRadius.circular(55),
+                      //                 boxShadow: [dropShadow()]
+                      //               ),
+                      //               child: Column(
+                      //                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      //                 crossAxisAlignment: CrossAxisAlignment.start,
+                      //                 children: [
+                      //                   Text(
+                      //                     "Sutiyo, S.Sos., M.M.",
+                      //                     style: myTextTheme.headline4,
+                      //                   ),
+                      //                   Text(
+                      //                     "NIDN : 4211106801",
+                      //                     style: myTextTheme.headline4,
+                      //                   ),
+                      //                   Text(
+                      //                     "Status : Dosen Tetap",
+                      //                     style: myTextTheme.headline4,
+                      //                   ),
+                      //                 ],
+                      //               ),
+                      //             ),
+                      //           )
+                      //         ],
+                      //       ),
+                      //     ),
+                      //   ],
+                      // ),
                       const SizedBox(height: 750),
                     ],
                   ),
                   const SizedBox(height: 24),
-                  SizedBox(
-                    child: Stack(
-                      children: [
-                        Positioned(
-                          right: 400,
-                          top: 0,
-                          child: CircleAvatar(
-                            backgroundColor: Resources.color.greenColor3,
-                            radius: 30,
-                          ),
-                        ),
-                        Positioned(
-                          top: 1200,
-                          left: 200,
-                          child: CircleAvatar(
-                            backgroundColor: Resources.color.greenColor4,
-                            radius: 40,
-                          ),
-                        ),
-                        Positioned(
-                          top: 350,
-                          left: 350,
-                          child: CircleAvatar(
-                            backgroundColor: Resources.color.greenColor1,
-                            radius: 25,
-                          ),
-                        ),
-                        Positioned(
-                          top: 420,
-                          right: 63,
-                          child: CircleAvatar(
-                            backgroundColor: Resources.color.greenColor4,
-                            radius: 50,
-                          ),
-                        ),
-                        Positioned(
-                          top: 400,
-                          right: 450,
-                          child: CircleAvatar(
-                            backgroundColor: Resources.color.greenColor1,
-                            radius: 25,
-                          ),
-                        ),
-                        Positioned(
-                          top: 700,
-                          left: 200,
-                          child: CircleAvatar(
-                            backgroundColor: Resources.color.greenColor1,
-                            radius: 40,
-                          ),
-                        ),
-                        Positioned(
-                          top: 800,
-                          left: 400,
-                          child: CircleAvatar(
-                            backgroundColor: Resources.color.greenColor4,
-                            radius: 25,
-                          ),
-                        ),
-                        Positioned(
-                          top: 950,
-                          right: 200,
-                          child: CircleAvatar(
-                            backgroundColor: Resources.color.greenColor3,
-                            radius: 25,
-                          ),
-                        ),
-                        Positioned(
-                          top: 1000,
-                          right: 500,
-                          child: CircleAvatar(
-                            backgroundColor: Resources.color.greenColor4,
-                            radius: 40,
-                          ),
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Container(
-                              width: Get.width,
-                              margin: const EdgeInsets.symmetric(
-                                horizontal: 64,
-                                vertical: 64
-                              ),
-                              child: Row(
-                                children: [
-                                  CircleAvatar(
-                                    backgroundColor: Resources.color.greenColor1,
-                                    radius: 200,
-                                    child: Align(
-                                      alignment: Alignment.topCenter,
-                                      child: CircleAvatar(
-                                        radius: 180,
-                                        backgroundImage: Resources.appImages.lecturer3,
-                                      ),
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: Container(
-                                      margin: const EdgeInsets.only(left: 64),
-                                      padding: const EdgeInsets.all(32),
-                                      height: 250,
-                                      decoration: BoxDecoration(
-                                        color: Resources.color.greenColor9,
-                                        borderRadius: BorderRadius.circular(55),
-                                        boxShadow: [dropShadow()]
-                                      ),
-                                      child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Text(
-                                            "Wildan Nugraha, S.E., M.S.ASM.",
-                                            style: myTextTheme.headline4,
-                                          ),
-                                          Text(
-                                            "NIDN : 4221018901",
-                                            style: myTextTheme.headline4,
-                                          ),
-                                          Text(
-                                            "Status : Dosen Tetap",
-                                            style: myTextTheme.headline4,
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                            Container(
-                              width: Get.width,
-                              margin: const EdgeInsets.symmetric(
-                                horizontal: 64,
-                                vertical: 64
-                              ),
-                              child: Row(
-                                children: [
-                                  CircleAvatar(
-                                    backgroundColor: Resources.color.greenColor1,
-                                    radius: 200,
-                                    child: Align(
-                                      alignment: Alignment.topCenter,
-                                      child: CircleAvatar(
-                                        radius: 180,
-                                        backgroundImage: Resources.appImages.lecturer4,
-                                      ),
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: Container(
-                                      margin: const EdgeInsets.only(left: 64),
-                                      padding: const EdgeInsets.all(32),
-                                      height: 250,
-                                      decoration: BoxDecoration(
-                                        color: Resources.color.greenColor9,
-                                        borderRadius: BorderRadius.circular(55),
-                                        boxShadow: [dropShadow()]
-                                      ),
-                                      child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          Text(
-                                            "Yacob Mandala P. Pandjaitan, S.S.T., M.Si.",
-                                            style: myTextTheme.headline4,
-                                          ),
-                                          Text(
-                                            "NIDN : 4202128701",
-                                            style: myTextTheme.headline4,
-                                          ),
-                                          Text(
-                                            "Status : Dosen Tetap",
-                                            style: myTextTheme.headline4,
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                          ]
-                        )
-                      ],
-                    ),
-                  ),
+                  // SizedBox(
+                  //   child: Stack(
+                  //     children: [
+                  //       Positioned(
+                  //         right: 400,
+                  //         top: 0,
+                  //         child: CircleAvatar(
+                  //           backgroundColor: Resources.color.greenColor3,
+                  //           radius: 30,
+                  //         ),
+                  //       ),
+                  //       Positioned(
+                  //         top: 1200,
+                  //         left: 200,
+                  //         child: CircleAvatar(
+                  //           backgroundColor: Resources.color.greenColor4,
+                  //           radius: 40,
+                  //         ),
+                  //       ),
+                  //       Positioned(
+                  //         top: 350,
+                  //         left: 350,
+                  //         child: CircleAvatar(
+                  //           backgroundColor: Resources.color.greenColor1,
+                  //           radius: 25,
+                  //         ),
+                  //       ),
+                  //       Positioned(
+                  //         top: 420,
+                  //         right: 63,
+                  //         child: CircleAvatar(
+                  //           backgroundColor: Resources.color.greenColor4,
+                  //           radius: 50,
+                  //         ),
+                  //       ),
+                  //       Positioned(
+                  //         top: 400,
+                  //         right: 450,
+                  //         child: CircleAvatar(
+                  //           backgroundColor: Resources.color.greenColor1,
+                  //           radius: 25,
+                  //         ),
+                  //       ),
+                  //       Positioned(
+                  //         top: 700,
+                  //         left: 200,
+                  //         child: CircleAvatar(
+                  //           backgroundColor: Resources.color.greenColor1,
+                  //           radius: 40,
+                  //         ),
+                  //       ),
+                  //       Positioned(
+                  //         top: 800,
+                  //         left: 400,
+                  //         child: CircleAvatar(
+                  //           backgroundColor: Resources.color.greenColor4,
+                  //           radius: 25,
+                  //         ),
+                  //       ),
+                  //       Positioned(
+                  //         top: 950,
+                  //         right: 200,
+                  //         child: CircleAvatar(
+                  //           backgroundColor: Resources.color.greenColor3,
+                  //           radius: 25,
+                  //         ),
+                  //       ),
+                  //       Positioned(
+                  //         top: 1000,
+                  //         right: 500,
+                  //         child: CircleAvatar(
+                  //           backgroundColor: Resources.color.greenColor4,
+                  //           radius: 40,
+                  //         ),
+                  //       ),
+                  //       Column(
+                  //         crossAxisAlignment: CrossAxisAlignment.start,
+                  //         children: [
+                  //           Container(
+                  //             width: Get.width,
+                  //             margin: const EdgeInsets.symmetric(
+                  //               horizontal: 64,
+                  //               vertical: 64
+                  //             ),
+                  //             child: Row(
+                  //               children: [
+                  //                 CircleAvatar(
+                  //                   backgroundColor: Resources.color.greenColor1,
+                  //                   radius: 200,
+                  //                   child: Align(
+                  //                     alignment: Alignment.topCenter,
+                  //                     child: CircleAvatar(
+                  //                       radius: 180,
+                  //                       backgroundImage: Resources.appImages.lecturer3,
+                  //                     ),
+                  //                   ),
+                  //                 ),
+                  //                 Expanded(
+                  //                   child: Container(
+                  //                     margin: const EdgeInsets.only(left: 64),
+                  //                     padding: const EdgeInsets.all(32),
+                  //                     height: 250,
+                  //                     decoration: BoxDecoration(
+                  //                       color: Resources.color.greenColor9,
+                  //                       borderRadius: BorderRadius.circular(55),
+                  //                       boxShadow: [dropShadow()]
+                  //                     ),
+                  //                     child: Column(
+                  //                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  //                       crossAxisAlignment: CrossAxisAlignment.start,
+                  //                       children: [
+                  //                         Text(
+                  //                           "Wildan Nugraha, S.E., M.S.ASM.",
+                  //                           style: myTextTheme.headline4,
+                  //                         ),
+                  //                         Text(
+                  //                           "NIDN : 4221018901",
+                  //                           style: myTextTheme.headline4,
+                  //                         ),
+                  //                         Text(
+                  //                           "Status : Dosen Tetap",
+                  //                           style: myTextTheme.headline4,
+                  //                         ),
+                  //                       ],
+                  //                     ),
+                  //                   ),
+                  //                 )
+                  //               ],
+                  //             ),
+                  //           ),
+                  //           Container(
+                  //             width: Get.width,
+                  //             margin: const EdgeInsets.symmetric(
+                  //               horizontal: 64,
+                  //               vertical: 64
+                  //             ),
+                  //             child: Row(
+                  //               children: [
+                  //                 CircleAvatar(
+                  //                   backgroundColor: Resources.color.greenColor1,
+                  //                   radius: 200,
+                  //                   child: Align(
+                  //                     alignment: Alignment.topCenter,
+                  //                     child: CircleAvatar(
+                  //                       radius: 180,
+                  //                       backgroundImage: Resources.appImages.lecturer4,
+                  //                     ),
+                  //                   ),
+                  //                 ),
+                  //                 Expanded(
+                  //                   child: Container(
+                  //                     margin: const EdgeInsets.only(left: 64),
+                  //                     padding: const EdgeInsets.all(32),
+                  //                     height: 250,
+                  //                     decoration: BoxDecoration(
+                  //                       color: Resources.color.greenColor9,
+                  //                       borderRadius: BorderRadius.circular(55),
+                  //                       boxShadow: [dropShadow()]
+                  //                     ),
+                  //                     child: Column(
+                  //                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  //                       crossAxisAlignment: CrossAxisAlignment.start,
+                  //                       children: [
+                  //                         Text(
+                  //                           "Yacob Mandala P. Pandjaitan, S.S.T., M.Si.",
+                  //                           style: myTextTheme.headline4,
+                  //                         ),
+                  //                         Text(
+                  //                           "NIDN : 4202128701",
+                  //                           style: myTextTheme.headline4,
+                  //                         ),
+                  //                         Text(
+                  //                           "Status : Dosen Tetap",
+                  //                           style: myTextTheme.headline4,
+                  //                         ),
+                  //                       ],
+                  //                     ),
+                  //                   ),
+                  //                 )
+                  //               ],
+                  //             ),
+                  //           ),
+                  //         ]
+                  //       )
+                  //     ],
+                  //   ),
+                  // ),
+                  // Container(
+                  //   // height: 120.0,
+                  //   width: 500,
+                  //   decoration: BoxDecoration(
+                  //     image: DecorationImage(
+                  //       image: AppImages().struktur,
+                  //       fit: BoxFit.fill,
+                  //     ),
+                  //     shape: BoxShape.circle,
+                  //   ),
+                  // )
+                  
                 ],
               ),
             ),

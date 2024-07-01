@@ -69,6 +69,12 @@ class AppImages {
   AssetImage areaConceptImage = const AssetImage(
     'assets/images/area-concept-image.png'
   );
+  AssetImage struktur = const AssetImage(
+    'assets/images/img_struktur.png'
+  );
+  AssetImage newRunway = const AssetImage(
+    'assets/images/img_new_runway.png'
+  );
 }
 
 class Images {
@@ -96,7 +102,8 @@ class Images {
   String waterIcon = 'assets/icons/water.png';
   String fire = 'assets/lottie/fire.json';
   String water = 'assets/lottie/water.json';
-  String water2 = 'assets/lottie/water.gif';
+  // String water2 = 'assets/lottie/water.gif';
+  String water2 = 'assets/lottie/water_new.gif';
   // String areaConceptImage = 'assets/images/area-concept-image.png';
 }
 

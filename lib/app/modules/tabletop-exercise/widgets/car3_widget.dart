@@ -12,8 +12,8 @@ class Car3Widget extends StatefulWidget {
 
 class _Car3WidgetState extends State<Car3Widget> {
   double angle = 0;
-  double xPosition = Get.width/2.45;
-  double yPosition = Get.height/4.75;
+  double xPosition = Get.width/2.15;
+  double yPosition = Get.height/1.45;
   bool isCar3Active = false;
   
   @override
@@ -37,7 +37,7 @@ class _Car3WidgetState extends State<Car3Widget> {
                 IconButton(
                     onPressed: (){
                       setState(() {
-                        angle += 15 * math.pi / 160;
+                        angle -= 15 * math.pi / 160;
                       });
                     },
                     icon: const Icon(
@@ -48,7 +48,7 @@ class _Car3WidgetState extends State<Car3Widget> {
                 IconButton(
                     onPressed: (){
                       setState(() {
-                        angle -= 15 * math.pi / 160;
+                        angle += 15 * math.pi / 160;
                       });
                     },
                     icon: const Icon(
@@ -77,7 +77,7 @@ class _Car3WidgetState extends State<Car3Widget> {
                 Transform.rotate(
                   angle: angle,
                   child: Image.asset(
-                    "assets/exercise/car3.png",
+                    "assets/exercise/car3_new.png",
                     width: Get.width/45,
                   )
                 ),
